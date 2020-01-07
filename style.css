@@ -1,5 +1,5 @@
 html {
-  background-color: #FF0000;
+  /*background-color: #FF0000;*/
   padding: 40px;
 }
 
@@ -12,9 +12,9 @@ body {
 }
 
 p {
-  /*font-family: 'Roboto Mono', monospace;*/
+  /*font-family: 'Noto Sans', sans-serif;*/
   /*font-family: 'Inria Serif', serif;*/
-  font-family: 'Noto Sans', sans-serif;
+  /*font-family: 'Roboto Mono', monospace;*/
 }
 
 .form-control {
