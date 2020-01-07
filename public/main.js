@@ -9,27 +9,34 @@ const htmlElement = document.querySelector('html');
 
 const setStyles = () => {
   if (window.localStorage.length > 0) {
-    console.log('Stuff in local storage');
+    img.src = window.localStorage.img || imgInput.value;
+    imgInput.value = window.localStorage.img || imgInput.value
+    p.style.fontFamily = window.localStorage.font || fontInput.value;
+    fontInput.value = window.localStorage.font || fontInput.value;
+    const bgColor = window.localStorage.bgColor || bgColorInput.value;
+    bgColorInput.value = window.localStorage.bgColor || bgColorInput.value;
+    htmlElement.setAttribute('style', `background-color: #${bgColor};`);
   } else {
-    console.log('nah');
+    htmlElement.setAttribute('style', `background-color: #${bgColorInput.value};`);
+    img.src = imgInput.value;
+    p.style.fontFamily = fontInput.value;
   }
 }
 
 setStyles();
 
-htmlElement.setAttribute('style', `background-color: #${bgColorInput.value};`);
-img.src = imgInput.value;
-p.setAttribute('style', `font-family: ${fontInput.value};`);
-
 bgColorInput.addEventListener('change', function() {
   htmlElement.setAttribute('style', `background-color: #${this.value};`);
+  window.localStorage.bgColor = this.value;
 });
 
 fontInput.addEventListener('change', function() {
-  p.setAttribute('style', `font-family: ${this.value};`);
+  p.style.fontFamily = this.value;
+  window.localStorage.font = this.value
 });
 
 imgInput.addEventListener('change', function() {
   img.src = this.value;
+  window.localStorage.img = this.value;
 });
 
