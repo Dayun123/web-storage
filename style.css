@@ -11,6 +11,12 @@ body {
   background-color: #FFF;
 }
 
+p {
+  /*font-family: 'Roboto Mono', monospace;*/
+  /*font-family: 'Inria Serif', serif;*/
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .form-control {
   padding: 10px 0;
 }
@@ -22,8 +28,8 @@ label {
 }
 
 form {
-  /*margin: 0 auto;*/
   width: 400px;
+  padding-right: 40px;
 }
 
 img {

@@ -2,18 +2,19 @@
 <html>
 <head>
   <title>Web Storage</title>
+  <link href="https://fonts.googleapis.com/css?family=Inria+Serif|Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
   <div class="text-container">
     <h1>Web Storage</h1>
-    <p>A simple example which demonstrates a way to use the Web Storage API. Based on <a href="https://mdn.github.io/dom-examples/web-storage/?">MDN Web Storage Example</a></p>
+    <p>A simple example which demonstrates a way to use the Web Storage API to save some user-based styles between page visits. Any styles you pick below should be saved in local storage and will be reloaded whenever you refresh or revisit the page. Based on <a href="https://mdn.github.io/dom-examples/web-storage/?">MDN Web Storage Example</a></p>
   </div>
 
   <div class="main-content">
     <div class="img-container">
-      <img src="./img/pug.jpeg">
+      <img src="https://i.ytimg.com/vi/GsEyc2T1IJU/maxresdefault.jpg">
     </div>
     <form action="" method="get">
       <div class="form-control">
@@ -23,17 +24,17 @@
       <div class="form-control">
         <label for="font">Font: </label>
         <select name="font" id="font">
-          <option value="sans-serif">Sans-serif</option>
-          <option value="serif">Serif</option>
-          <option value="monospace">Monospace</option>
+          <option value="'Noto Sans', sans-serif">Sans-serif</option>
+          <option value="'Inria Serif', serif">Serif</option>
+          <option value="'Roboto Mono', monospace">Monospace</option>
         </select>
       </div>
       <div class="form-control">
         <label for="img">Image: </label>
         <select name="img" id="img">
-          <option value="pug.jpeg">Pug</option>
-          <option value="frenchy.jpeg">Frenchy</option>
-          <option value="english-bulldog.jpeg">English Bulldog</option>
+          <option value="https://i.ytimg.com/vi/GsEyc2T1IJU/maxresdefault.jpg">Pug</option>
+          <option value="https://3.bp.blogspot.com/-jBhKFN_Pc_4/UXGUn8OHA0I/AAAAAAAAJno/sa_iEIhYtXg/s1600/french-bulldog2.jpg">Frenchy</option>
+          <option value="https://thehappypuppysite.com/wp-content/uploads/2018/04/best-food-for-english-bulldog-puppies-header.jpg">English Bulldog</option>
         </select>
       </div>
     </form>
