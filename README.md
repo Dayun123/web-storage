@@ -14,4 +14,4 @@ A simple example which demonstrates a way to use the Web Storage API to save som
 
 ## Demo
 
-No demo setup yet, need to push to heroku 
+Demo can be found here: [Web Storage Demo](https://web-storage-mdn-clone.herokuapp.com/)
