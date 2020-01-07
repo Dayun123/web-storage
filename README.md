@@ -10,7 +10,6 @@ A simple example which demonstrates a way to use the Web Storage API to save som
 
 1. Cleanup the main.js file, it works but it's ugly and repetitive
 2. Maybe style the page a little better, do something with fonts or spacing
-3. Setup a heroku site that can be used for server-backed apps like this so you can host an example.
 
 ## Demo
 
