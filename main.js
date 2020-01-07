@@ -11,3 +11,7 @@ htmlElement.setAttribute('style', `background-color: #${bgColorInput.value};`);
 img.src = imgInput.value;
 p.setAttribute('style', `font-family: ${fontInput.value};`);
 
+document.addEventListener('change', function(e) {
+  console.log(e.target);
+});
+
