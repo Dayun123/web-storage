@@ -23,12 +23,12 @@ p {
 
 label {
   display: inline-block;
-  width: 150px;
+  width: 250px;
   text-align: right;
 }
 
 form {
-  width: 400px;
+  width: 500px;
   padding-right: 40px;
 }
 
