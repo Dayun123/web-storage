@@ -7,6 +7,16 @@ const p = document.querySelector('p');
 
 const htmlElement = document.querySelector('html');
 
+const setStyles = () => {
+  if (window.localStorage.length > 0) {
+    console.log('Stuff in local storage');
+  } else {
+    console.log('nah');
+  }
+}
+
+setStyles();
+
 htmlElement.setAttribute('style', `background-color: #${bgColorInput.value};`);
 img.src = imgInput.value;
 p.setAttribute('style', `font-family: ${fontInput.value};`);
