@@ -22,8 +22,12 @@ label {
 }
 
 form {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: 400px;
+}
+
+img {
+  width: 200px;
 }
 
 input,
@@ -33,4 +37,10 @@ select {
 
 .text-container {
   width: 500px;
+}
+
+.main-content {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
